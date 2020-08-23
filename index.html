@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library Project</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>My Library</h1>
+        <p>Store all your favorite books here!</p>
+        <div class="books"></div>
+    </div>
+
+    <button class="open-button">Add A Book</button>
+    <button class="remove-all">Remove All</button>
+    <div class="form-popup" id="myForm">
+        <form class="form-container">
+            <h3>Add A New Book</h3>
+
+            <label for="title"><b>Title</b></label>
+            <input type="text" placeholder="Enter Title" class="input input-title" required>
+
+            <label for="title"><b>Author</b></label>
+            <input type="text" placeholder="Enter Author" class="input input-author" required>
+
+            <label for="pages"><b>Pages</b></label>
+            <input type="number" placeholder="Number Of Pages" class="input input-pages" required>
+
+            <button type="submit" class="btn" id="submit-btn">Submit</button>
+            <button type="submit" class="btn cancel" id="close-btn">Close</button>
+        </form>
+    </div>
+
+    <div class="error"></div>
+    <script src="app.js"></script>
+</body>
+
+</html>

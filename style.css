@@ -1,0 +1,195 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: rgb(27, 82, 48);
+    color: #fff;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.6rem;
+    margin-top: 30px;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    margin-top: 30px;
+}
+
+.books {
+    display: flex;
+    justify-content: stretch;
+    margin: 50px auto;
+}
+
+
+.book-card {
+    border: 3px solid #000;
+    padding: 10px 25px;
+    border-radius: 10px;
+    background: rgb(161, 161, 161);
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 5px 30px;
+}
+
+.book-card:hover{
+    background: #000;
+    color: rgb(13, 163, 83);
+}
+
+.book-card h1 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    border-bottom: 1px dotted #333;
+}
+
+/* .book-card button {
+    margin: 5px 10px;
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+} */
+
+.delete-btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    padding: 4px 10px;
+    background: #333;
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+}
+
+.delete-btn:hover {
+    background: rgb(26, 26, 26);
+}
+
+.delete-btn:active {
+    transform: scale(0.90);
+}
+
+.delete-btn:focus {
+    outline: none;
+}
+
+
+
+
+
+/*Form Popup*/
+
+
+.open-button {
+    background-color: #555;
+    color: white;
+    font-size: 20px;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    left: 38px;
+    width: 180px;
+    outline: none;
+}
+
+.open-button:hover, .remove-all:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    opacity: 1;
+}
+
+.remove-all {
+    background-color: #555;
+    color: white;
+    font-size: 20px;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    left: 238px;
+    width: 180px;
+    outline: none;
+}
+
+.form-popup {
+    position: fixed;
+    display: none;
+    bottom: 0;
+    right: 35px;
+    border: 3px solid #202020;
+    z-index: 9;
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+}
+
+.form-container input[type=text], .form-container input[type=number] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=number]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+.form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+
+.error-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.error-msg {
+    background: rgb(155, 19, 19);
+    color: #000;
+    padding: 5px 10px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
